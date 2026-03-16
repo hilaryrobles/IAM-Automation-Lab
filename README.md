@@ -19,14 +19,34 @@ are core to any IAM role.
 
 | Tool | Purpose |
 |------|---------|
-| Microsoft Entra ID | Identity and access management, user provisioning |
+| VirtualBox | Creating and managing virtual machines |
+| Windows Server 2022 | Active Directory Domain Controller |
+| Microsoft Entra ID | Cloud identity and access management |
+| Active Directory | On-premises identity management |
 | PowerShell | Automation and scripting |
 | Microsoft 365 | License assignment and productivity suite management |
-| Active Directory | On-premises identity management |
+| Microsoft Graph API | Programmatic interaction with Entra ID |
 
 ## 📂 Lab Breakdown
 
-### 1. User Lifecycle Management
+### 1. Environment Setup
+> Setting up the lab environment including VirtualBox, Windows Server 2022, 
+> and a free Microsoft Entra ID tenant.
+
+This section covers the initial setup of the lab environment. A Windows Server 2022 
+virtual machine is created in VirtualBox and promoted to a Domain Controller, 
+establishing the on-premises foundation of the lab. A free Microsoft Entra ID tenant 
+is also configured to handle cloud identity management.
+
+**What is covered:**
+- Installing and configuring VirtualBox
+- Creating and configuring a Windows Server 2022 VM
+- Promoting Windows Server to a Domain Controller
+- Setting up a free Microsoft Entra ID tenant
+
+*Screenshots and documentation coming soon*
+
+### 2. User Lifecycle Management
 > Simulating the full lifecycle of a user identity from onboarding to offboarding 
 > across both Microsoft Entra ID and Active Directory.
 
@@ -38,13 +58,14 @@ Directory are used to reflect how identity management works in a hybrid enterpri
 
 **What is covered:**
 - Creating and configuring users in Entra ID and Active Directory
+- Creating Organizational Units and Security Groups
 - Assigning and managing Microsoft 365 licenses
 - Managing group memberships and access
 - Offboarding users and revoking access
 
 *Screenshots and documentation coming soon*
 
-### 2. Role Based Access Control (RBAC)
+### 3. Role Based Access Control (RBAC)
 > Assigning and managing roles and permissions based on job function to enforce 
 > the principle of least privilege.
 
@@ -61,7 +82,7 @@ where default roles do not always fit.
 
 *Screenshots and documentation coming soon*
 
-### 3. Access Provisioning & Deprovisioning
+### 4. Access Provisioning & Deprovisioning
 > Automating the process of granting and revoking access using PowerShell scripts 
 > to reduce manual effort and human error.
 
@@ -79,7 +100,7 @@ tasks are handled at scale in an enterprise environment.
 
 *Scripts and documentation coming soon*
 
-### 4. Conditional Access Policies
+### 5. Conditional Access Policies
 > Configuring policies in Microsoft Entra ID to enforce security controls and 
 > restrict access based on user, location, and device conditions.
 
@@ -96,7 +117,7 @@ right conditions.
 
 *Screenshots and documentation coming soon*
 
-### 5. Identity Governance
+### 6. Identity Governance
 > Using Microsoft Entra ID Access Reviews to ensure users retain only the access 
 > they need over time.
 
@@ -122,5 +143,8 @@ one of the most important and often overlooked aspects of identity governance.
 - [Microsoft Entra ID Documentation](https://learn.microsoft.com/en-us/entra/identity/)
 - [PowerShell Documentation](https://learn.microsoft.com/en-us/powershell/)
 - [Microsoft 365 Admin Documentation](https://learn.microsoft.com/en-us/microsoft-365/)
+- [Microsoft Graph PowerShell SDK](https://learn.microsoft.com/en-us/powershell/microsoftgraph/overview)
+- [VirtualBox Documentation](https://www.virtualbox.org/wiki/Documentation)
+- [Windows Server 2022 Evaluation](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022)
 
 *This lab is actively being built. Check back for updates!*
